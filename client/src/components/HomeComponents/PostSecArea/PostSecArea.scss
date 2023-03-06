@@ -1,0 +1,135 @@
+.post-section-area {
+  width: 690px;
+  margin-right: 91px;
+  margin-top: 46px;
+  .post-section-area-wraper {
+    width: 100%;
+    .post {
+      width: 100%;
+      margin-left: 17px;
+      .post-item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        .post-info {
+          width: 100%;
+          display: flex;
+          gap: 15px;
+          img.pro-img {
+            width: 100px;
+            height: 57px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          .info-sec {
+            transform: translate(-3px, 0px);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 5px;
+            .name-sec-t-h {
+              display: flex;
+              gap: 8px;
+              cursor: pointer;
+              a {
+                font-size: 16px;
+                color: black;
+                font-weight: 600;
+                display: flex;
+                gap: 5px;
+                cursor: pointer;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+              a.nikname {
+                font-size: 14px;
+                font-weight: 400;
+                font-family: system-ui;
+                color: black;
+                cursor: pointer;
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+            p.sec-tiktok {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 3px;
+              align-items: center;
+              a {
+                font-size: 15px;
+                color: black;
+                font-weight: 600;
+                font-family: system-ui;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+            .original-sound-sec {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 10px;
+              a {
+                font-size: 15px;
+                color: black;
+                font-weight: 600;
+                font-family: system-ui;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+          button {
+            padding: 3px 25px;
+            border: 1px solid red;
+            color: red;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 16px;
+            font-family: system-ui;
+            cursor: pointer;
+          }
+        }
+        .post-video-sec {
+          margin-left: 69px;
+          display: flex;
+          align-items: flex-end;
+          gap: 20px;
+          margin-bottom: 50px;
+          video {
+            width: 282px;
+            height: 500px;
+            border-radius: 10px;
+          }
+          .info {
+            height: 199px;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .item {
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+
+              img {
+                width: 24px;
+                height: 24px;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

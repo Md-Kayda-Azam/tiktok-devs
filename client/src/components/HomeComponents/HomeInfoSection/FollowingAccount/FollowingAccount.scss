@@ -1,0 +1,69 @@
+.following-account {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 32px;
+  span.title {
+    font-size: 13px;
+    padding: 10px 0px;
+  }
+  .following-account-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 7px;
+    gap: 13px;
+    .item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      gap: 13px;
+      .info {
+        display: flex;
+        flex-direction: column;
+        .name-info {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 7px;
+          span {
+            font-size: 14px;
+            font-weight: 600;
+            font-family: unset;
+            color: #221d1d;
+          }
+        }
+        p {
+          transform: translate(0px, -1px);
+          color: rgb(105 108 129 / 75%);
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 15px;
+          max-width: 260px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      }
+      img {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+        border-radius: 50%;
+      }
+    }
+    button {
+      border: none;
+      color: red;
+      cursor: pointer;
+    }
+  }
+  .foll {
+    margin-top: 20px;
+  }
+}

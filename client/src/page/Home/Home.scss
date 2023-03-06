@@ -1,0 +1,10 @@
+.home-body-section {
+  background-color: #ffffff;
+  .home-body-section-wraper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 60px;
+    width: 100%;
+  }
+}

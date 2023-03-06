@@ -1,0 +1,90 @@
+.pro-info-show-sugg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-top: 32px;
+  cursor: pointer;
+  z-index: 999;
+  .wraper {
+    background-color: #fff;
+    width: 300px;
+    min-height: auto;
+    border-radius: 10px;
+    padding: 10px 10px;
+    cursor: context-menu;
+    .item-sec-pp {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0px;
+
+      img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+      }
+      button {
+        padding: 3px 25px;
+        border: 1px solid red;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 16px;
+        height: 30px;
+        font-family: system-ui;
+        cursor: pointer;
+        background-color: #fe2c55;
+      }
+    }
+    .name-sec-t {
+      display: flex;
+      flex-direction: column;
+      .name-sec {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        a.name {
+          font-size: 16px;
+          font-weight: 900;
+          color: #3c3939;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        a {
+          font-size: 14px;
+          font-weight: 400;
+          color: #0e0e0e;
+          cursor: pointer;
+        }
+      }
+      a.nikname {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: system-ui;
+        color: rgb(46, 45, 45);
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .f-l {
+      display: flex;
+      justify-content: flex-start;
+      gap: 8px;
+      span {
+        color: #7a7a7a;
+        b {
+          color: #000;
+        }
+      }
+    }
+  }
+  .wraper.six {
+    width: 200px;
+  }
+}

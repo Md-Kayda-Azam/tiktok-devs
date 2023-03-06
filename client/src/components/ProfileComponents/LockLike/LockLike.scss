@@ -1,0 +1,15 @@
+.lock-like-sec {
+  width: 100%;
+  min-height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .wraper-liked {
+    width: 440px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

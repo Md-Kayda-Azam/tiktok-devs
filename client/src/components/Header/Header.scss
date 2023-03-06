@@ -1,0 +1,444 @@
+.tik-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  background-color: #fff;
+  z-index: 9999;
+  .header-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    padding: 0px 122px;
+    .logo {
+    }
+    .header-menu {
+      display: flex;
+      .search-menu {
+        background-color: #fff;
+        margin-bottom: 6px;
+        .search.wraper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 361px;
+          border-radius: 20px;
+          margin-bottom: 10px;
+          position: relative;
+          input[type="text"] {
+            font-weight: 500;
+            font-size: 16px;
+            font-family: system-ui;
+            border: none;
+            background: transparent;
+            padding: 0px;
+            width: 361px;
+            height: 44px;
+            caret-color: rgb(254, 44, 85);
+            border-radius: 20px;
+            padding-left: 16px;
+            outline: none;
+            transform: translate(16px, 1px);
+          }
+
+          input[type="text"]::placeholder {
+            color: #969696;
+            margin-left: 5px;
+          }
+          input[type="text"]:focus {
+            border: 1px solid #ddd;
+          }
+
+          .btn-ty {
+            position: absolute;
+            right: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translate(16px, 0px);
+            .border-search {
+              right: 49px;
+              border: 1px solid #e3e3e3;
+              position: absolute;
+              height: 25px;
+              z-index: 999;
+            }
+            button {
+              border: none;
+              border-left: 1px solid #ddd;
+              cursor: pointer;
+              width: 50px;
+              height: 40px;
+              margin-left: 20px;
+              border-radius: 0px 20px 20px 0px;
+              border-color: #fff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            button:hover {
+              background-color: #eaeaeb;
+              border-radius: 0px 20px 20px 0px;
+            }
+          }
+        }
+      }
+      .input_t {
+        transform: translate(-108px, 0px);
+      }
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3px;
+        margin-left: 90px;
+        gap: 0px;
+        .upload-btn {
+          transform: translate(-7px, 0px);
+          button {
+            padding: 0px 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+            height: 36px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            font-weight: 300;
+            gap: 10px;
+            border-radius: 3px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            cursor: pointer;
+            color: #1a1919;
+            margin-top: 2px;
+            p {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 2px;
+              gap: 9px;
+              svg.tiktok-qeydvm-StyledPlusIcon.e18d3d944 {
+                font-size: 20px;
+                color: #000;
+                margin: 2px 0px 0px 0px;
+              }
+            }
+          }
+        }
+        .login-btn {
+          transform: translate(-8px, 0px);
+          button {
+            padding: 0px 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+            height: 38px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            font-weight: 300;
+            gap: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            background-color: #fe2c55;
+            cursor: pointer;
+            color: #fff;
+            margin-top: 2px;
+            width: 100px;
+            p {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 2px;
+              gap: 9px;
+              svg.tiktok-qeydvm-StyledPlusIcon.e18d3d944 {
+                font-size: 20px;
+                color: #000;
+                margin: 2px 0px 0px 0px;
+              }
+            }
+          }
+        }
+        .create-Effect-btn {
+          transform: translate(4px, -5px);
+          width: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50px;
+          &:hover {
+            .create-effects {
+              display: block;
+            }
+          }
+          .create-effects {
+            position: absolute;
+            height: 20px;
+            background-color: #616161;
+            padding: 9px;
+            width: 110px;
+            top: 53px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            display: none;
+
+            .up-a {
+              display: block;
+              position: absolute;
+              width: 36px;
+              height: 8px;
+              background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDM2IDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDhoNi42ODZhOCA4IDAgMCAwIDUuNjU3LTIuMzQzbDQuOTUtNC45NWExIDEgMCAwIDEgMS40MTQgMGw0Ljk1IDQuOTVBOCA4IDAgMCAwIDI5LjMxNCA4SDM2IDB6IiBmaWxsPSIjNTQ1NDU0IiBmaWxsLW9wYWNpdHk9Ii45MiIvPjwvc3ZnPg==);
+              top: -8px;
+              left: 50%;
+              margin-left: -18px;
+            }
+            span {
+              text-align: center;
+              font-size: 15px;
+              font-weight: 600;
+              margin: 0px;
+              padding: 0px;
+            }
+          }
+        }
+
+        .info-pew {
+          transform: translate(4px, -1px);
+          font-size: 19px;
+          cursor: pointer;
+          &:hover {
+            .info-tre {
+              display: block;
+            }
+          }
+          .info-tre {
+            position: absolute;
+            background-color: #fff;
+            width: 200px;
+            right: 2px;
+            top: 40px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            display: block;
+            box-shadow: 2px 3px 10px -7px rgb(0 0 0 / 75%);
+            display: none;
+            .up-a {
+              position: absolute;
+              width: 36px;
+              height: 24px;
+              background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDM2IDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDhoNi42ODZhOCA4IDAgMCAwIDUuNjU3LTIuMzQzbDQuOTUtNC45NWExIDEgMCAwIDEgMS40MTQgMGw0Ljk1IDQuOTVBOCA4IDAgMCAwIDI5LjMxNCA4SDM2IDB6IiBmaWxsPSIjNTQ1NDU0IiBmaWxsLW9wYWNpdHk9Ii45MiIvPjwvc3ZnPg==);
+              top: -15px;
+              left: 50%;
+              margin-left: 78px;
+              filter: opacity(0.1);
+            }
+            .item {
+              display: flex;
+              gap: 10px;
+              align-items: center;
+              padding: 10px;
+              width: 93%;
+              cursor: pointer;
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+        .upload {
+          margin-right: 0px;
+        }
+        .item {
+          a {
+            svg.tiktok-9oofjg-StyledIcon.e1nx07zo1 {
+              width: 60px;
+              color: #000;
+              height: 26px;
+              margin-right: 2px;
+            }
+            svg.tiktok-1g0p6jv-StyledInboxIcon.e18kkhh41 {
+              margin-right: 24px;
+            }
+            svg.dwefwew {
+              margin-right: 7px;
+            }
+          }
+
+          .create-effects-message {
+            position: absolute;
+            height: 20px;
+            background-color: #616161;
+            padding: 9px;
+            right: -20px;
+            top: 38px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            display: none;
+
+            .up-a {
+              display: block;
+              position: absolute;
+              width: 36px;
+              height: 8px;
+              background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDM2IDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDhoNi42ODZhOCA4IDAgMCAwIDUuNjU3LTIuMzQzbDQuOTUtNC45NWExIDEgMCAwIDEgMS40MTQgMGw0Ljk1IDQuOTVBOCA4IDAgMCAwIDI5LjMxNCA4SDM2IDB6IiBmaWxsPSIjNTQ1NDU0IiBmaWxsLW9wYWNpdHk9Ii45MiIvPjwvc3ZnPg==);
+              top: -8px;
+              left: 50%;
+              margin-left: -18px;
+            }
+            span {
+              text-align: center;
+              font-size: 16px;
+              font-weight: 600;
+              margin: 0px;
+              padding: 0px;
+            }
+          }
+          .mess {
+            right: -18px;
+          }
+          .create-effects-inbox {
+            position: absolute;
+            height: 20px;
+            background-color: #616161;
+            padding: 9px;
+            right: 8px;
+            top: 38px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            display: none;
+
+            .up-a {
+              display: block;
+              position: absolute;
+              width: 36px;
+              height: 8px;
+              background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDM2IDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDhoNi42ODZhOCA4IDAgMCAwIDUuNjU3LTIuMzQzbDQuOTUtNC45NWExIDEgMCAwIDEgMS40MTQgMGw0Ljk1IDQuOTVBOCA4IDAgMCAwIDI5LjMxNCA4SDM2IDB6IiBmaWxsPSIjNTQ1NDU0IiBmaWxsLW9wYWNpdHk9Ii45MiIvPjwvc3ZnPg==);
+              top: -8px;
+              left: 50%;
+              margin-left: -18px;
+            }
+            span {
+              text-align: center;
+              font-size: 16px;
+              font-weight: 600;
+              margin: 0px;
+              padding: 0px;
+            }
+          }
+          .inbox {
+            right: 10px;
+          }
+          img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+            padding: 10px 0px;
+          }
+        }
+        .create-effects-toltip:hover {
+          .create-effects {
+            display: block;
+          }
+        }
+        .create-effects-message-toltip:hover {
+          .create-effects-message {
+            display: block;
+          }
+        }
+        .create-effects-inbox-toltip:hover {
+          .create-effects-inbox {
+            display: block;
+          }
+        }
+        .handle-setting-popul-list:hover {
+          .home-profile-info {
+            display: block;
+          }
+        }
+        .item.create-effects-message-toltip {
+          transform: translate(5px, 0px);
+        }
+        .item.create-effects-inbox-toltip {
+          transform: translate(5px, 0px);
+        }
+        .item.handle-setting-popul-list {
+          transform: translate(5px, 0px);
+        }
+      }
+    }
+    .hme {
+      margin-right: 22px;
+    }
+  }
+  .padd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .home-profile-info {
+    position: absolute;
+    top: 55px;
+    height: 355px;
+    width: 221px;
+    right: 0px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px -4px rgb(0 0 0 / 75%);
+    display: none;
+    .up-a {
+      display: block;
+      position: absolute;
+      width: 36px;
+      height: 8px;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDM2IDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDhoNi42ODZhOCA4IDAgMCAwIDUuNjU3LTIuMzQzbDQuOTUtNC45NWExIDEgMCAwIDEgMS40MTQgMGw0Ljk1IDQuOTVBOCA4IDAgMCAwIDI5LjMxNCA4SDM2IDB6IiBmaWxsPSIjNTQ1NDU0IiBmaWxsLW9wYWNpdHk9Ii45MiIvPjwvc3ZnPg==);
+      top: -8px;
+      left: 50%;
+      margin-left: 60px;
+      filter: opacity(0.2);
+    }
+    .item {
+      padding: 10px 15px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      svg.css-g0144v {
+        font-size: 20px;
+      }
+      span {
+        font-weight: 500;
+        color: #161823;
+      }
+    }
+  }
+  .profileShow {
+    right: -15px;
+  }
+}
+
+.tik-header.ssaas {
+  position: inherit;
+}
